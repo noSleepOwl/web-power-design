@@ -13,6 +13,8 @@ import org.thymeleaf.standard.expression.IStandardExpressionParser;
 import org.thymeleaf.standard.expression.StandardExpressions;
 import org.thymeleaf.templatemode.TemplateMode;
 
+import static com.example.templates.util.Tools.getExpressionValue;
+
 class DataMaskingDialectTagProcessor extends AbstractAttributeTagProcessor {
 
     private static final String TEXT_ATTRIBUTE = "text";
@@ -65,12 +67,5 @@ class DataMaskingDialectTagProcessor extends AbstractAttributeTagProcessor {
         return model;
     }
 
-    private Object getExpressionValue(ITemplateContext iTemplateContext, String expressionString) {
-        final IEngineConfiguration configuration = iTemplateContext.getConfiguration();
-        final IStandardExpressionParser parser = StandardExpressions.getExpressionParser(configuration);
-        // 解析expression
-        final IStandardExpression expression = parser.parseExpression(iTemplateContext, expressionString);
-        // 获取expression的执行结果
-        return expression.execute(iTemplateContext);
-    }
+
 }

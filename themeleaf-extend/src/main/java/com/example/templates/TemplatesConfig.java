@@ -1,5 +1,6 @@
 package com.example.templates;
 
+import com.example.templates.power.PowerDialect;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -12,5 +13,10 @@ public class TemplatesConfig {
     @ConditionalOnMissingBean
     DataMaskingDialect dataMaskingDialect() {
         return new DataMaskingDialect();
+    }
+
+    @Bean
+    PowerDialect powerDialect() {
+        return new PowerDialect("pw");
     }
 }

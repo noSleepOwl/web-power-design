@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns:masking="http://www.thymeleaf.org" xmlns:pw="http://www.thymeleaf.org">
+      xmlns:masking="http://www.thymeleaf.org"
+      xmlns:pw="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>自定义标签测试</title>
@@ -12,12 +13,19 @@
     <p th:text="${phone}"></p>
     <p masking:text="${phone}"></p>
     <th:block masking:text="${phone}"></th:block>
-    <!--菜单权限-->
-    <div pw:code="1" pw:type="M" pw:disable-class="unuse">power——1</div>
-    <div>power——1</div>
-    <div>power——1</div>
-    <div>power——1</div>
-    <div>power——1</div>
+    <!--菜单权限 code 代码 type 类型 ， disable-class -->
+    <div pw:code="1" pw:type="M">
+        <span>power——1</span>
+        <button>power——1</button>
+    </div>
+    <div pw:code="2" pw:type="M">
+        <span>power——1</span>
+        <button>power——1</button>
+    </div>
+    <div pw:code="3" pw:type="M">
+        <span>power——1</span>
+        <button>power——1</button>
+    </div>
 
 
 </div>
