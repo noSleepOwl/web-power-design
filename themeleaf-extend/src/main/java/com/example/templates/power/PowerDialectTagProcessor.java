@@ -11,7 +11,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 public class PowerDialectTagProcessor extends AbstractAttributeTagProcessor {
     private static final String TEXT_ATTRIBUTE = "code";
 
-    protected PowerDialectTagProcessor(String prefix) {
+    PowerDialectTagProcessor(String prefix) {
         super(
                 TemplateMode.HTML, //templateMode: 模板模式，这里使用HTML模板。
                 prefix, //prefix: 标签前缀。即xxx:text中的xxx。在此例子中prefix为masking。
