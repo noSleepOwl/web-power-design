@@ -1,0 +1,8 @@
+
+
+
+
+dependencies {
+    implementation project(":example-spring-boot-starter")
+    implementation project(":themeleaf-extend")
+}

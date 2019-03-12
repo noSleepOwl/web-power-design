@@ -1,0 +1,9 @@
+example:
+  service:
+    prefix: jkdjskjf
+    suffix: jjkjkj
+    enabled: true
+spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8

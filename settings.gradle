@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'spring-starter-tester'
+include 'main-module'
+include 'example-spring-boot-starter'
+include 'themeleaf-extend'
+include 'util-module'
+

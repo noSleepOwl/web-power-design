@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:masking="http://www.thymeleaf.org" xmlns:pw="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义标签测试</title>
+</head>
+<body>
+<div id="hello">
+    <h1>hello world </h1>
+    <p th:text="${phone}"></p>
+    <p masking:text="${phone}"></p>
+    <th:block masking:text="${phone}"></th:block>
+    <!--菜单权限-->
+    <div pw:code="1" pw:type="M" pw:disable-class="unuse">power——1</div>
+    <div>power——1</div>
+    <div>power——1</div>
+    <div>power——1</div>
+    <div>power——1</div>
+
+
+</div>
+
+</body>
+</html>

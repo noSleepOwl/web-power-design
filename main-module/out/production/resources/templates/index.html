@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:masking="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义标签测试</title>
+</head>
+<body>
+<div id="hello">
+    <h1>hello world </h1>
+    <p th:text="${phone}"></p>
+    <p masking:text="${phone}" masking:pattern="^.{2}(.*)$"></p>
+    <th:block masking:text="${phone}" masking:pattern="^.{2}(.*)$">
+    </th:block>
+
+
+</div>
+
+</body>
+</html>
