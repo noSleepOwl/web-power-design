@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "example.service",
+      "type": "com.slee.owl.powerdesign.ExampleServiceProperties",
+      "sourceType": "com.slee.owl.powerdesign.ExampleServiceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "example.service.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.slee.owl.powerdesign.ExampleServiceProperties"
+    },
+    {
+      "name": "example.service.suffix",
+      "type": "java.lang.String",
+      "sourceType": "com.slee.owl.powerdesign.ExampleServiceProperties"
+    }
+  ],
+  "hints": []
+}

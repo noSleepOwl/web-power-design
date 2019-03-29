@@ -5,4 +5,5 @@
 dependencies {
     implementation project(":example-spring-boot-starter")
     implementation project(":themeleaf-extend")
+    implementation "com.geccocrawler:gecco:1.3.+"
 }
